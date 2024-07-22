@@ -6,7 +6,7 @@ hero:
     - text: 概览
       link: /guide
     - text: Github
-      link: /
+      link: https://github.com/Leexiaop/buzz-ui
 features:
   - title: Hello
     emoji: 💎

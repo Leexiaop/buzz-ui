@@ -3,7 +3,18 @@
 This is an example component.
 
 ```jsx
-import { Foo } from 'buzzs-ui';
+import { Progress } from 'buzzs-ui';
 
-export default () => <Foo title="Hello dumi!" />
+const style = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    width: 120,
+    height: 120,
+    border: '6px solid #eee',
+    borderRadius: '50%',
+    backgroundImage: 'radial-gradient(circle, red, blue)'
+};
+
+export default () => <Progress percent={78} style={style}/>
 ```
