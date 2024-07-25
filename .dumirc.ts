@@ -1,8 +1,9 @@
 import { defineConfig } from 'dumi';
 
 export default defineConfig({
-  base: '/buzzs-ui/',
-  outputPath: 'dist',
+  base: '/buzzs-ui',
+  publicPath: process.env.NODE_ENV === 'production' ? '/buzzs-ui/' : '/',
+  outputPath: 'docs-dist',
   favicons: ['/favicon.png'],
   themeConfig: {
     rtl: true,
