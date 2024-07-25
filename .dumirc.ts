@@ -4,22 +4,31 @@ export default defineConfig({
   base: '/buzzs-ui',
   publicPath: process.env.NODE_ENV === 'production' ? '/buzzs-ui/' : '/',
   outputPath: 'docs-dist',
-  favicons: ['/favicon.png'],
+  favicons: [
+    process.env.NODE_ENV === 'production' ? '/buzzs-ui/logo.png' : '/logo.png',
+  ],
   themeConfig: {
     rtl: true,
-    logo: '/logo.png',
+    socialLinks: {
+      github: 'https://github.com/Leexiaop/buzz-ui',
+    },
+    sourceLink: 'https://github.com/Leexiaop/buzz-ui',
+    logo:
+      process.env.NODE_ENV === 'production'
+        ? '/buzzs-ui/logo.png'
+        : '/logo.png',
     nav: [
       {
         title: '设计',
-        link: '/design'
+        link: '/design',
       },
       {
         title: '研发',
-        link: '/devlop'
+        link: '/devlop',
       },
       {
         title: '组件',
-        link: '/components',
+        link: '/components/progress',
       },
       {
         title: 'Github',
