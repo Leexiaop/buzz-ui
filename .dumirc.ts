@@ -8,11 +8,12 @@ export default defineConfig({
     process.env.NODE_ENV === 'production' ? '/buzzs-ui/logo.png' : '/logo.png',
   ],
   themeConfig: {
+    lastUpdated: true,
+    footer: 'Copyright © 2024 | Powered by buzzers',
     rtl: true,
     socialLinks: {
       github: 'https://github.com/Leexiaop/buzz-ui',
     },
-    sourceLink: 'https://github.com/Leexiaop/buzz-ui',
     logo:
       process.env.NODE_ENV === 'production'
         ? '/buzzs-ui/logo.png'
@@ -29,11 +30,7 @@ export default defineConfig({
       {
         title: '组件',
         link: '/components/progress',
-      },
-      {
-        title: 'Github',
-        link: 'https://github.com/Leexiaop/buzz-ui',
-      },
+      }
     ],
   },
 });
