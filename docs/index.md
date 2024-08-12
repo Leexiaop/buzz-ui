@@ -14,8 +14,8 @@ hero:
       link: https://www.ibadgers.cn/buzzs/
 
     - theme: brand
-      text: Buzzs-cli
-      link: https://www.ibadgers.cn/buzzs-cli/
+      text: Create-Buzzs-App
+      link: https://www.ibadgers.cn/create-buzzs-app/
 
 features:
   - title: 简单
